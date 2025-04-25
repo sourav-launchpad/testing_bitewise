@@ -1,34 +1,126 @@
 ALLERGEN_KEYWORDS = {
-    "Peanut allergy": ["peanut", "satay", "groundnut", "peanut butter", "peanut oil"],
-    "Tree nut allergy (e.g. almond, cashew, walnut)": ["almond", "cashew", "walnut", "pecan", "hazelnut", "nutmeg", "nut butter"],
-    "Shellfish allergy": ["shrimp", "prawn", "crab", "lobster", "scampi", "scallop"],
-    "Fish allergy": ["salmon", "tuna", "cod", "trout", "anchovy", "mackerel", "sardine", "fish sauce"],
-    "Egg allergy": ["egg", "mayonnaise", "aioli", "meringue", "custard"],
-    "Milk allergy (cow's milk protein: casein and/or whey)": ["milk", "cream", "cheese", "yogurt", "butter", "ghee", "paneer", "kefir"],
-    "Soy allergy": ["soy", "soybean", "tofu", "edamame", "tempeh", "miso", "tamari", "soy sauce"],
-    "Wheat allergy": ["wheat", "flour", "breadcrumbs", "semolina", "couscous", "bulgur"],
-    "Sesame allergy": ["sesame", "tahini", "sesame oil"],
-    "Mustard allergy": ["mustard", "mustard seeds", "mustard oil"],
-    "Lupin allergy": ["lupin", "lupine"],
-    "Celery allergy": ["celery", "celeriac"],
-    "Lactose intolerance": ["milk", "cream", "cheese", "butter", "yogurt", "lactose"],
-    "Gluten intolerance / Non-celiac gluten sensitivity": ["wheat", "barley", "rye", "malt", "spelt", "triticale", "gluten"],
-    "Fructose intolerance (hereditary or malabsorption)": ["fructose", "honey", "apples", "pears", "agave", "high-fructose corn syrup"],
-    "Histamine intolerance": ["canned fish", "fermented foods", "aged cheese", "wine", "sauerkraut", "vinegar", "spinach"],
-    "Salicylate sensitivity": ["berries", "tomato", "mint", "peppermint", "chilli", "capsicum"],
-    "FODMAP intolerance": ["onion", "garlic", "wheat", "apple", "pear", "honey", "mango", "milk"],
-    "Sulphite sensitivity": ["sulphite", "preservative 220", "dried fruit", "wine", "vinegar", "processed meat"],
-    "MSG sensitivity": ["msg", "monosodium glutamate", "flavour enhancer 621"],
-    "Caffeine sensitivity": ["coffee", "tea", "chocolate", "cocoa", "cola"],
-    "Alcohol intolerance": ["wine", "beer", "spirits", "rum", "vodka"],
-    "Artificial sweetener sensitivity": ["aspartame", "saccharin", "sucralose", "acesulfame", "stevia"],
-    "Food additive intolerance (e.g. preservatives, colourings)": ["preservative", "colouring", "flavour enhancer", "additive", "emulsifier"],
+    "Peanut allergy": [
+        "peanut", "satay", "groundnut", "peanut butter", "peanut oil", "chopped peanuts", "crushed peanuts"
+    ],
+
+    "Tree nut allergy (e.g. almond, cashew, walnut)": [
+        "almond", "cashew", "walnut", "pecan", "hazelnut", "macadamia", "pine nut", "nutmeg", "nut butter", 
+        "nut crusted", "almond meal", "walnut pesto", "cashew cheese", "pecan pie"
+    ],
+
+    "Shellfish allergy": [
+        "shrimp", "prawn", "crab", "lobster", "scampi", "scallop", "shellfish", "seafood mix", 
+        "shrimp paste", "crab cakes", "prawn crackers", "tempura prawn", "lobster roll"
+    ],
+
+    "Egg allergy": [
+        "egg", "eggs", "omelette", "scramble", "frittata", "boiled egg", "egg sauce", "poached egg", "fried egg", "devilled egg", "baked egg", "egg salad", "egg muffin", "egg wrap", "mayonnaise", "aioli", 
+        "custard", "meringue", "egg wash", "egg-based dressing"
+    ],
+
+    "Fish allergy": [
+        "fish", "salmon", "tuna", "mackerel", "trout", "cod", "sardine", "barramundi", "snapper", 
+        "anchovy", "haddock", "halibut", "tilapia", "sea bass", "sashimi", "grilled fish", "poached fish", 
+        "smoked salmon", "fish sauce", "canned tuna", "tuna salad", "miso cod", "fish curry", "tuna steak"
+    ],
+
+    "Milk allergy (cow's milk protein: casein and/or whey)": [
+        "milk", "cream", "cheese", "yogurt", "butter", "ghee", "paneer", "kefir", "whipped cream", 
+        "custard", "cheesy", "milkshake", "creamy sauce", "cream cheese", "cheesecake", "milk bun", 
+        "ice cream", "feta", "parmesan", "mozzarella"
+    ],
+
+    "Soy allergy": [
+        "soy", "soybean", "tofu", "edamame", "tempeh", "miso", "tamari", "soy sauce", 
+        "textured vegetable protein", "tvp", "soya", "soy milk", "tofu scramble"
+    ],
+
+    "Wheat allergy": [
+        "wheat", "flour", "breadcrumbs", "semolina", "couscous", "bulgur", "wheat pasta", 
+        "wheat wrap", "wholemeal flour", "gluten bread"
+    ],
+
+    "Sesame allergy": [
+        "sesame", "tahini", "sesame oil", "sesame crusted", "sesame dressing", "sesame seed bun"
+    ],
+
+    "Mustard allergy": [
+        "mustard", "mustard seeds", "mustard oil", "wholegrain mustard", "honey mustard", "mustard dressing"
+    ],
+
+    "Lupin allergy": [
+        "lupin", "lupine", "lupin flour"
+    ],
+
+    "Celery allergy": [
+        "celery", "celeriac", "celery root", "celery salt", "celery sticks"
+    ],
+
+    "Lactose intolerance": [
+        "milk", "cream", "cheese", "butter", "yogurt", "lactose", "ice cream", "creamy", 
+        "custard", "feta", "paneer", "mozzarella", "ghee", "dairy"
+    ],
+
+    "Gluten intolerance / Non-celiac gluten sensitivity": [
+        "wheat", "barley", "rye", "malt", "spelt", "triticale", "gluten", "bread", 
+        "noodles", "pasta", "couscous", "biscuit", "cake", "pie crust"
+    ],
+
+    "Fructose intolerance (hereditary or malabsorption)": [
+        "fructose", "honey", "apples", "pears", "agave", "high-fructose corn syrup", 
+        "fruit juice", "fruit salad", "apple pie", "pear tart"
+    ],
+
+    "Histamine intolerance": [
+        "canned fish", "fermented foods", "aged cheese", "wine", "sauerkraut", "vinegar", 
+        "spinach", "cured meats", "smoked fish", "pickles", "kombucha", "soy sauce", "miso"
+    ],
+
+    "Salicylate sensitivity": [
+        "berries", "tomato", "mint", "peppermint", "chilli", "capsicum", "spicy salsa", 
+        "hot sauce", "tomato paste", "tomato-based"
+    ],
+
+    "FODMAP intolerance": [
+        "onion", "garlic", "wheat", "apple", "pear", "honey", "mango", "milk", 
+        "asparagus", "leek", "legumes", "beans", "cauliflower", "broccoli (stalk)"
+    ],
+
+    "Sulphite sensitivity": [
+        "sulphite", "preservative 220", "dried fruit", "wine", "vinegar", "processed meat", 
+        "sulphur dioxide", "sausages", "cured meats", "sultanas", "bacon"
+    ],
+
+    "MSG sensitivity": [
+        "msg", "monosodium glutamate", "flavour enhancer 621", "umami seasoning", "instant noodles", 
+        "seasoning powder", "flavour booster"
+    ],
+
+    "Caffeine sensitivity": [
+        "coffee", "tea", "chocolate", "cocoa", "cola", "espresso", "latte", "mocha", 
+        "energy drink", "iced coffee"
+    ],
+
+    "Alcohol intolerance": [
+        "wine", "beer", "spirits", "rum", "vodka", "whiskey", "brandy", "cooking wine", 
+        "red wine reduction", "white wine sauce"
+    ],
+
+    "Artificial sweetener sensitivity": [
+        "aspartame", "saccharin", "sucralose", "acesulfame", "stevia", "sweetener", 
+        "sugar substitute", "diet soda", "light yogurt"
+    ],
+
+    "Food additive intolerance (e.g. preservatives, colourings)": [
+        "preservative", "colouring", "flavour enhancer", "additive", "emulsifier", 
+        "e-number", "processed snack", "coloured icing", "packet soup", "artificial flavour"
+    ]
 }
 
 HEALTH_RESTRICTIONS = {
-    "Type 1 Diabetes": ["sugar", "syrup", "honey", "sweetened drinks", "refined carbs", "desserts"],
-    "Type 2 Diabetes": ["sugar", "syrup", "sweetened drinks", "refined carbs", "white rice", "pastries"],
-    "Prediabetes / Insulin Resistance": ["sugar", "white bread", "soda", "white rice", "refined flour", "sweets"],
+    "Type 1 Diabetes": ["sugar", "syrup", "honey", "sweetened drinks", "refined carbs", "desserts", "savoury", "sweet", "spicy"],
+    "Type 2 Diabetes": ["sugar", "syrup", "sweetened drinks", "refined carbs", "white rice", "pastries", "savoury", "sweet", "spicy"],
+    "Prediabetes / Insulin Resistance": ["sugar", "white bread", "soda", "white rice", "refined flour", "sweets", "savoury", "sweet", "spicy"],
     "Metabolic Syndrome": ["sugar", "trans fats", "processed foods", "refined carbs", "soda", "excessive red meat"],
     "PCOS": ["sugar", "white bread", "soda", "processed snacks", "refined carbs"],
     "Hypothyroidism / Hashimoto's": ["soy", "gluten", "cruciferous vegetables (in excess)", "raw kale"],
@@ -111,9 +203,7 @@ DIET_RESTRICTIONS = {
         "shellfish", "shrimp", "prawn", "crab", "lobster", "anchovy", "pollock", "gelatin", "meat broth", "animal fat", "lard"
     ],
     "Vegan": [
-        "chicken", "beef", "pork", "lamb", "goat", "duck", "turkey", "veal", "fish", "seafood", "shellfish", "shrimp", "prawn",
-        "crab", "lobster", "anchovy", "pollock", "egg", "egg whites", "egg yolk", "milk", "cheese", "butter", "yogurt",
-        "cream", "whey", "casein", "honey", "gelatin", "meat broth", "animal fat", "lard", "ghee"
+        "chicken", "beef", "pork", "lamb", "goat", "duck", "turkey", "veal", "fish", "seafood", "shellfish", "shrimp", "prawn", "crab", "lobster", "anchovy", "pollock", "egg", "egg whites", "egg yolk", "milk", "cheese", "butter", "yogurt", "cream", "whey", "casein", "honey", "gelatin", "meat broth", "animal fat", "lard", "ghee", "eggs", "omelette", "egg yolk", "egg white"
     ],
     "Pescatarian": [
         "chicken", "beef", "pork", "lamb", "goat", "duck", "turkey", "veal", "gelatin", "meat broth", "animal fat", "lard"
@@ -148,8 +238,7 @@ DIET_RESTRICTIONS = {
     ],
     "Flexitarian": [],  # no hard exclusions, user may optionally reduce meat
     "Pegan (Paleo + Vegan hybrid)": [
-        "chicken", "beef", "pork", "fish", "seafood", "shellfish", "egg", "milk", "cheese", "yogurt", "butter",
-        "grains", "legumes", "tofu", "soy", "sugar", "processed foods", "alcohol", "additives", "preservatives"
+        "chicken", "beef", "pork", "fish", "seafood", "shellfish", "egg", "omelette", "egg yolk", "egg white", "milk", "cheese", "yogurt", "butter", "eggs", "grains", "legumes", "tofu", "soy", "sugar", "processed foods", "alcohol", "additives", "preservatives"
     ],
     "DASH (Dietary Approaches to Stop Hypertension)": [
         "high sodium", "salt", "cured meats", "processed meats", "pickles", "soy sauce (regular)", "instant noodles",
@@ -239,7 +328,7 @@ DIETARY_REQUIREMENTS = {
     },
     "Vegan": {
         "allowed": ["vegetables", "fruits", "grains", "legumes", "nuts", "seeds", "plant-based oils"],
-        "restricted": ["meat", "fish", "poultry", "seafood", "dairy", "eggs", "honey", "gelatin", "some additives"],
+        "restricted": ["meat", "fish", "poultry", "seafood", "dairy", "eggs", "honey", "gelatin", "some additives", "egg", "omelette", "egg yolk", "egg white"],
         "notes": "Avoids all animal products and by-products"
     },
     "Vegetarian (Lacto-ovo)": {
@@ -268,8 +357,8 @@ DIETARY_REQUIREMENTS = {
         "notes": "Primarily vegetarian with occasional consumption of animal products"
     },
     "Pegan (Paleo + Vegan hybrid)": {
-        "allowed": ["vegetables", "fruits", "nuts", "seeds", "some legumes (sparingly)", "fish (sustainably sourced)", "eggs (pasture-raised)", "small amounts of grass-fed meat"],
-        "restricted": ["dairy", "grains", "most legumes", "processed foods", "refined sugar"],
+        "allowed": ["vegetables", "fruits", "nuts", "seeds", "some legumes (sparingly)", "fish (sustainably sourced)", "small amounts of grass-fed meat"],
+        "restricted": ["egg", "eggs", "omelette", "egg yolk", "egg white", "dairy", "grains", "most legumes", "processed foods", "refined sugar"],
         "notes": "Combines principles of Paleo and Vegan diets, emphasizing whole plant foods and limited animal products"
     },
     "DASH (Dietary Approaches to Stop Hypertension)": {
@@ -330,8 +419,9 @@ Generate a list of creative and original recipe names based on the given dish de
 
 **Guidelines:**
 - Use clear, descriptive language.  
-- Avoid generic or overused words like: *Fragrant*, *Oceanic*, *Zesty*, *Stir-Fry*, *Delight*, *Aussie*, *Brekkie*, *Lemony* 
-- Subtle wordplay, alliteration, or sensory imagery is encouraged — only where it feels organic.  
+- Avoid generic or overused words like: *Fragrant*, *Oceanic*, *Zesty*, *Stir-Fry*, *Delight*, *Aussie*, *Brekkie*, *Lemony*
+- IMPORTANT: For any dish that uses tomato as a base (like in curries or stews), describe it as "tomato-based" instead of using the term "tomato sauce" unless it is an actual prepared sauce like pasta sauce or ketchup. This avoids confusion with traditional Western sauces.
+- Subtle wordplay, alliteration, or sensory imagery is encouraged — only where it feels organic.
 - Focus on the key ingredient(s), cooking method, or regional influence.  
 - The name should feel modern, refined, and not overly "foodie" or forced.
   
@@ -400,21 +490,22 @@ Reference **Coles or Woolworths packaging sizes** where possible to ensure accur
 
 AUTHENTIC_RECIPE_NAMES = {
     "Traditional Australian / British / American": [
+    
     # Australian Breakfasts
     "Avocado Toast with Poached Egg and Grilled Tomato | Breakfast",
-    "Zucchini Corn Fritters with Greek Yogurt Dip and Spinach Salad | Breakfast",
+    "Zucchini and Corn Fritters with Greek Yogurt and Spinach Salad | Breakfast",
     "Wholegrain Vegemite Sandwich with Boiled Eggs and Carrot Sticks | Breakfast",
-    "Baked Beans on Toast with Sautéed Mushrooms and Parsley | Breakfast",
+    "Baked Beans on Wholegrain Toast with Sautéed Mushrooms and Parsley | Breakfast",
     "Pumpkin and Spinach Wholemeal Muffins with Cottage Cheese | Breakfast",
     "Mini Breakfast Tacos with Scrambled Eggs, Spinach, and Tomato Chutney | Breakfast",
     "Marmite Toast with Poached Egg and Wilted Spinach | Breakfast",
-    "Sweet Potato and Zucchini Hash with Baked Beans | Breakfast",
-    "Grilled Tomato and Mushroom Medley with Poached Egg on Wholemeal Toast | Breakfast",
-    "Scrambled Eggs with Roasted Capsicum, Rocket, and Rye | Breakfast",
+    "Sweet Potato and Zucchini Hash with Baked Beans and Rocket | Breakfast",
+    "Grilled Tomato and Mushroom Medley with Poached Egg on Wholegrain Toast | Breakfast",
+    "Scrambled Eggs with Roasted Capsicum, Rocket, and Rye Bread | Breakfast",
     "Toasted Muesli with Greek Yogurt, Grated Carrot, and Walnuts | Breakfast",
     "Corn and Broccoli Wholemeal Pikelets with Chive Yogurt | Breakfast",
     "Spinach and Cheese Stuffed Wholegrain Muffins with Tomato Relish | Breakfast",
-    "Breakfast Salad with Poached Egg, Avocado, and Sautéed Veggies | Breakfast",
+    "Breakfast Salad with Poached Egg, Avocado, and Sautéed Vegetables | Breakfast",
     "Smashed Avocado on Multigrain Toast with Cherry Tomatoes and Dill | Breakfast",
     "Wholegrain Wrap with Roasted Pumpkin, Feta, and Spinach Omelette | Breakfast",
     "Roasted Veggie Stack with Poached Egg and Wholegrain Croutons | Breakfast",
@@ -422,7 +513,8 @@ AUTHENTIC_RECIPE_NAMES = {
     "Breakfast Bowl with Quinoa, Beetroot, Boiled Egg, and Lemon Dressing | Breakfast",
     "Chickpea Patties with Grilled Tomato and Spinach on Wholegrain Toast | Breakfast",
 
-    # British Breakfasts
+    # British Breakfast
+    "Vegetarian Full English with Tofu Sausage, Beans, Mushrooms, and Tomatoes | Breakfast",
     "Black Pudding Hash with Sweet Potato, Red Onion, and Poached Egg | Breakfast",
     "Porridge with Grated Apple, Carrot, Cinnamon, and Walnuts | Breakfast",
     "Baked Tomatoes on Toasted Wholegrain Crumpets with Cheddar | Breakfast",
@@ -433,7 +525,6 @@ AUTHENTIC_RECIPE_NAMES = {
     "Wholegrain Toast with Baked Mushrooms, Spinach, and Soft-Boiled Egg | Breakfast",
     "Grilled Asparagus and Beans with Egg on Barley Toast | Breakfast",
     "Cheddar and Chive Oatcakes with Roasted Cherry Tomatoes | Breakfast",
-    "Vegetarian Full English with Tofu Sausage, Beans, Mushrooms, and Tomatoes | Breakfast",
     "Grilled Portobello Mushrooms with Spinach and Poached Egg on Rye | Breakfast",
     "Wholemeal Toast with Poached Egg, Roasted Beetroot, and Horseradish Cream | Breakfast",
     "Vegetable and Oat Hash Cakes with Fried Egg and Tomato Relish | Breakfast",
@@ -444,27 +535,17 @@ AUTHENTIC_RECIPE_NAMES = {
     "Grilled Sardines with Tomato, Onion, and Wholegrain Toast | Breakfast",
     "Lentil and Mushroom Toast Topper with Chive Ricotta | Breakfast",
 
-    # American Breakfasts
-    "Wholegrain Pancakes with Greek Yogurt and Mixed Berries alongside Carrot Hash | Breakfast",
+    # American Breakfast
+    "Wholegrain Pancakes with Greek Yogurt, Mixed Berries, and Carrot Hash | Breakfast",
     "Avocado and Turkey Bacon on Multigrain Bagel with Sautéed Spinach | Breakfast",
-    "Sweet Potato Hash with Black Beans, Scrambled Egg, and Salsa | Breakfast",
+    "Sweet Potato Hash with Black Beans, Scrambled Egg, and Tomato Salsa | Breakfast",
     "Steel-Cut Oats with Banana, Carrot, Toasted Nuts, and Cinnamon | Breakfast",
-    "Breakfast Quesadilla with Spinach, Egg, and Tomato Salsa | Breakfast",
-    "Peanut Butter and Banana on Wholegrain Toast with Grated Zucchini | Breakfast",
-    "Spinach and Mushroom Omelette with Wholemeal Toast and Baked Capsicum | Breakfast",
+    "Breakfast Quesadilla with Spinach, Egg, and Tomato Salsa on Wholemeal Tortilla | Breakfast",
+    "Spinach and Mushroom Omelette with Wholegrain Toast and Roasted Capsicum | Breakfast",
     "Breakfast Burrito with Pinto Beans, Brown Rice, Grilled Onion, and Egg | Breakfast",
     "Greek Yogurt Parfait with Granola, Roasted Carrot, and Berries | Breakfast",
     "Frittata with Kale, Pumpkin, Onion, and Wholegrain Toast | Breakfast",
     "Smoked Salmon on Rye with Cream Cheese, Rocket, and Dill | Breakfast",
-    "Cottage Cheese Bowl with Cucumber, Tomato, Egg, and Rye Croutons | Breakfast",
-    "Tofu Scramble with Bell Pepper, Corn, and Toasted Wholemeal Bread | Breakfast",
-    "Wholegrain Bagel with Nut Butter, Roasted Pumpkin, and Chia | Breakfast",
-    "Vegetable Breakfast Bowl with Black Beans, Roasted Sweet Potato, and Avocado | Breakfast",
-    "Baked Egg Cups with Spinach, Tomato, and Feta served with Quinoa Toast | Breakfast",
-    "Grilled Chicken Sausage with Zucchini Fritters and Salsa Verde | Breakfast",
-    "Mashed White Bean Spread with Egg, Spinach, and Wholegrain Crackers | Breakfast",
-    "Egg Muffins with Capsicum, Broccoli, and Grated Cheese served with Multigrain Toast | Breakfast",
-    "Brown Rice Porridge with Carrot, Ginger, and Sesame | Breakfast",
 
     # Australian Lunches
     "Grilled Kangaroo Steak with Quinoa Salad and Beetroot Relish | Lunch",
@@ -489,9 +570,9 @@ AUTHENTIC_RECIPE_NAMES = {
     "Chickpea and Spinach Curry with Wholegrain Roti | Lunch",
 
     # British Lunches
-    "Shepherd’s Pie with Cauliflower Mash and Garden Peas | Lunch",
+    "Shepherd's Pie with Cauliflower Mash and Garden Peas | Lunch",
     "Wholemeal Fish Finger Sandwich with Tartare Slaw | Lunch",
-    "Ploughman’s Lunch with Wholegrain Bread, Cheddar, and Pickled Veg | Lunch",
+    "Ploughman's Lunch with Wholegrain Bread, Cheddar, and Pickled Veg | Lunch",
     "Grilled Mackerel with Beetroot Salad and Rye Croutons | Lunch",
     "Lentil and Vegetable Pasties with Spinach and Tomato Salad | Lunch",
     "Bubble and Squeak Cakes with Poached Egg and Rocket | Lunch",
@@ -516,7 +597,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Cobb Salad with Grilled Chicken, Avocado, and Wholegrain Crackers | Lunch",
     "Black Bean and Veggie Burrito Bowl with Brown Rice | Lunch",
     "BBQ Tofu Wrap with Corn Salsa and Spinach | Lunch",
-    "Turkey Meatballs with Tomato Sauce and Quinoa | Lunch",
+    "Turkey Meatballs with Tomato-Based Sauce and Quinoa | Lunch",
     "Wholegrain Mac and Cheese with Spinach and Broccoli | Lunch",
     "Grilled Veggie and Chickpea Wrap with Hummus | Lunch",
     "Chicken and Brown Rice Soup with Carrot and Celery | Lunch",
@@ -530,6 +611,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Chicken Caesar Wrap with Kale and Greek Yogurt Dressing | Lunch",
     "Tofu Stir-fry with Brown Rice and Snow Peas | Lunch",
     "Wholegrain Pasta with Turkey Ragu and Grated Zucchini | Lunch",
+    "Three-Bean Salad with Wholegrain Crackers and Cucumber Dill Yogurt | Lunch",
 
     # Australian Dinners
     "Grilled Barramundi with Sweet Potato Mash and Steamed Broccoli | Dinner",
@@ -549,8 +631,8 @@ AUTHENTIC_RECIPE_NAMES = {
     "Baked Salmon with Quinoa, Beetroot, and Dill Yogurt Sauce | Dinner",
     "Vegetable Curry with Brown Basmati Rice and Raita | Dinner",
     "Baked Chicken Thighs with Pumpkin Couscous and Steamed Broccoli | Dinner",
-    "Lentil-Stuffed Bell Peppers with Barley and Fresh Herbs | Dinner",
-    "Spinach and Ricotta Wholegrain Cannelloni with Tomato Sauce | Dinner",
+    "Lentil-Stuffed Capsicum with Barley and Fresh Herbs | Dinner",
+    "Spinach and Ricotta Wholegrain Cannelloni with Tomato-Based Sauce | Dinner",
     "Chickpea and Vegetable Stew with Brown Rice and Lemon Parsley Gremolata | Dinner",
 
     # British Dinners
@@ -560,8 +642,8 @@ AUTHENTIC_RECIPE_NAMES = {
     "Fish Pie with Sweet Potato Topping and Steamed Greens | Dinner",
     "Bangers and Mash with Onion Gravy and Steamed Carrots | Dinner",
     "Toad in the Hole with Kale, Carrot, and Onion Gravy | Dinner",
-    "Ploughman’s Platter with Wholegrain Crackers and Pickled Veg | Dinner",
-    "Lamb and Lentil Shepherd’s Pie with Cauliflower Mash | Dinner",
+    "Ploughman's Platter with Wholegrain Crackers and Pickled Veg | Dinner",
+    "Lamb and Lentil Shepherd's Pie with Cauliflower Mash | Dinner",
     "Vegetarian Haggis with Oatmeal, Lentils, Turnips, and Green Beans | Dinner",
     "Poached Haddock with Barley, Spinach, and Mustard Cream | Dinner",
     "Beef and Leek Casserole with Wholemeal Dumplings | Dinner",
@@ -587,13 +669,13 @@ AUTHENTIC_RECIPE_NAMES = {
     "Macaroni Bake with Tuna, Peas, and Wholemeal Pasta | Dinner",
     "Grilled Chicken Thighs with Corn, Tomato Salsa, and Rice | Dinner",
     "Tex-Mex Black Bean Bowl with Avocado and Brown Rice | Dinner",
-    "Meatballs in Tomato Sauce with Spelt Pasta and Greens | Dinner",
-    "Quinoa-Stuffed Bell Peppers with Spinach and Feta | Dinner",
+    "Meatballs in Tomato-Based Sauce with Spelt Pasta and Greens | Dinner",
+    "Quinoa-Stuffed Capsicum with Spinach and Feta | Dinner",
     "Chicken Enchiladas with Wholemeal Tortillas and Grilled Veg | Dinner",
     "Lentil Meatballs with Mashed Pumpkin and Kale Salad | Dinner",
     "BBQ Pulled Jackfruit with Cabbage Slaw and Quinoa Bun | Dinner",
     "Baked Chicken Parm with Wholegrain Pasta and Roasted Broccoli | Dinner",
-    "Tofu Stir-fry with Bell Peppers, Snow Peas, and Brown Rice | Dinner",
+    "Tofu Stir-fry with Capsicum, Snow Peas, and Brown Rice | Dinner",
     "Vegetable Gumbo with Brown Rice and Okra | Dinner",
     "Grilled Prawn with Couscous, Avocado, and Mango Salsa | Dinner"
 ],
@@ -608,7 +690,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Molletes with Black Beans, Tomato, and Cilantro | Breakfast",
     "Sopes de Frijoles with Black Beans, Sour Cream, and Avocado | Breakfast",
     "Tamales de Pollo with Salsa and Lime | Breakfast",
-    "Frittata de Verduras with Zucchini, Spinach, and Bell Pepper | Breakfast",
+    "Frittata de Verduras with Zucchini, Spinach, and Capsicum | Breakfast",
     "Café de Olla with Pan Dulce | Breakfast",
     "Enfrijoladas with Black Bean Sauce and Fresh Toppings | Breakfast",
     "Tostadas de Tofu with Avocado, Salsa, and Cilantro | Breakfast",
@@ -621,7 +703,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Chargrilled Chicken Tinga Bowl with Brown Rice, Grilled Capsicum, and Avocado | Lunch",
     "Black Bean and Quinoa Tacos with Avocado Salsa, Pickled Onion, and Roasted Vegetables | Lunch",
     "Grilled Fish Veracruz-Style with Corn Tortillas, Tomato-Cucumber Salad, and Lime | Lunch",
-    "Grilled Chicken Fajitas with Bell Peppers, Onions, and Whole Wheat Tortillas | Lunch",
+    "Grilled Chicken Fajitas with Capsicum, Onions, and Whole Wheat Tortillas | Lunch",
     "Vegetarian Enchiladas with Black Beans, Corn, Avocado, and Salsa | Lunch",
     "Mexican Grilled Steak Salad with Cucumber, Tomatoes, and Cilantro Lime Dressing | Lunch",
     "Chili Con Carne with Kidney Beans, Brown Rice, and Avocado | Lunch",
@@ -632,7 +714,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Chicken and Vegetable Tortilla Soup with Cilantro and Lime | Lunch",
     "Roast Chicken and Roasted Veggie Tacos with Lime, Cilantro, and Salsa | Lunch",
     "Taco Salad with Lean Ground Beef, Black Beans, Avocado, and Salsa | Lunch",
-    "Quinoa and Black Bean Stuffed Bell Peppers with Salsa | Lunch",
+    "Quinoa and Black Bean Stuffed Capsicum with Salsa | Lunch",
     "Grilled Vegetable and Black Bean Tacos with Cilantro Lime Rice | Lunch",
     "Pork Carnitas with Roasted Sweet Potato, Black Beans, and Lime | Lunch",
     "Mexican Rice and Bean Bowl with Grilled Vegetables, Avocado, and Cilantro | Lunch",
@@ -645,7 +727,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Vegetarian Enchiladas with Roasted Vegetables, Black Beans, and Salsa | Dinner",
     "Grilled Steak with Quinoa, Roasted Corn, and Avocado | Dinner",
     "Pork Carnitas with Brown Rice, Grilled Vegetables, and Salsa | Dinner",
-    "Mexican Stuffed Bell Peppers with Black Beans, Quinoa, and Salsa | Dinner",
+    "Mexican Stuffed Capsicum with Black Beans, Quinoa, and Salsa | Dinner",
     "Chili Con Carne with Kidney Beans, Brown Rice, and Avocado | Dinner",
     "Grilled Chicken with Roasted Sweet Potato, Black Beans, and Lime | Dinner",
     "Vegetarian Tacos with Grilled Vegetables, Black Beans, and Avocado | Dinner",
@@ -687,23 +769,24 @@ AUTHENTIC_RECIPE_NAMES = {
   "Rajma Masala with Brown Rice and Beetroot Salad | Lunch",
   "Chana Masala Wrap with Wholewheat Roti and Cucumber Raita | Lunch",
   "Palak Paneer with Millet Rotis and Roasted Cauliflower | Lunch",
-  "Spicy Fish Curry with Red Rice and Stir-Fried Beans | Lunch",
+  "Fish Curry with Red Rice and Stir-Fried Beans | Lunch",
   "Vegetable Pulao with Boiled Egg and Carrot-Cabbage Slaw | Lunch",
   "Chicken Saagwala with Multigrain Roti and Pickled Onions | Lunch",
   "Sambar with Brown Rice and Pumpkin Poriyal | Lunch",
   "Paneer Tikka Bowl with Quinoa and Mint-Lemon Dressing | Lunch",
-  "Methi Thepla Burrito with Spicy Chickpea Filling | Lunch",
+  "Methi Thepla Burrito with Chickpea Filling | Lunch",
   "Masoor Dal with Jeera Rice and Grilled Eggplant | Lunch",
   "Egg Bhurji Wrap with Cucumber-Tomato Salsa and Coriander Dip | Lunch",
   "Baked Vegetable Cutlets with Moong Dal Khichdi and Mint Yogurt | Lunch",
   "Kofta Curry with Jowar Roti and Carrot-Beans Stir-fry | Lunch",
   "Tandoori Prawn Skewers with Lemon Couscous and Tomato-Onion Salad | Lunch",
-  "Stuffed Bell Peppers with Spiced Millet and Paneer | Lunch",
+  "Stuffed Capsicum with Spiced Millet and Paneer | Lunch",
   "Jackfruit Curry with Bajra Roti and Methi Saag | Lunch",
   "Butter Chicken with Brown Rice and Sauteed Greens | Lunch",
   "Aloo Baingan with Quinoa and Mint Raita | Lunch",
   "Lentil-Stuffed Paratha with Mixed Veg Pickle and Yogurt | Lunch",
-    # Dinner
+  
+  # Dinner
   "Methi Matar Malai with Whole Wheat Naan and Beet-Carrot Salad | Dinner",
   "Tandoori Salmon with Masala Sweet Potato Mash and Sauteed Beans | Dinner",
   "Mushroom Kadai with Multigrain Rotis and Garlic Raita | Dinner",
@@ -712,7 +795,7 @@ AUTHENTIC_RECIPE_NAMES = {
   "Mixed Dal Tadka with Wholegrain Roti and Kachumber Salad",
   "Bhindi Do Pyaza with Bajra Roti and Peanut-Coconut Slaw | Dinner",
   "Paneer Bhuna Masala with Jeera Quinoa and Green Beans | Dinner",
-  "Spicy Egg Curry with Brown Rice and Lemon Cabbage Stir-Fry | Dinner",
+  "Egg Curry with Brown Rice and Lemon Cabbage Stir-Fry | Dinner",
   "Vegetable Tofu Stir Fry with Buckwheat Noodles and Toasted Sesame | Dinner",
   "Fish Curry with Steamed Red Rice and Cucumber-Tomato Kachumber | Dinner",
   "Baingan Bharta with Jowar Roti and Spiced Yogurt | Dinner",
@@ -946,7 +1029,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Tofu and Bitter Melon Stir-fry with Brown Rice and Napa Cabbage | Lunch",
     "Shrimp with Ginger, Snow Peas, and Brown Rice | Lunch",
     "Soy-Braised Chicken with Chinese Mushrooms and Steamed Greens | Lunch",
-    "Stir-fried Tofu with Chinese Kale, Bell Pepper, and Brown Rice | Lunch",
+    "Stir-fried Tofu with Chinese Kale, Capsicum, and Brown Rice | Lunch",
     "Bamboo Shoot and Chicken Stir-fry with Quinoa and Baby Bok Choy | Lunch",
     "Moo Goo Gai Pan (Chicken with Mushrooms and Vegetables) and Brown Rice | Lunch",
     "Steamed Fish with Ginger, Scallions, Brown Rice, and Stir-fried Water Spinach | Lunch",
@@ -1000,7 +1083,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Duck and Mushroom Stir-fry with Brown Rice and Greens | Dinner",
     "Eggplant and Minced Chicken Stir-fry with Quinoa and Choy Sum | Dinner",
     "Steamed Sole Fillet with Ginger, Brown Rice, and Sautéed Cabbage | Dinner",
-    "Tofu and Bell Pepper Stir-fry with Garlic Rice and Chinese Chives | Dinner",
+    "Tofu and Capsicum Stir-fry with Garlic Rice and Chinese Chives | Dinner",
     "Vegetable Stir-fry with Black Fungus, Bean Curd, and Brown Rice | Dinner",
     "Garlic Shrimp with Chinese Greens and Brown Rice | Dinner",
     "Chicken and Tofu Stir-fry with Capsicum, Snow Peas, and Quinoa | Dinner",
@@ -1021,7 +1104,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Clay Pot Rice with Mushrooms, Tofu, and Seasonal Greens | Dinner",
     "Braised Duck with Bamboo Shoots and Garlic Kale | Dinner",
     "Egg and Tomato Stir-fry with Rice and Stir-fried Napa Cabbage | Dinner",
-    "Tofu Stir-fry with Bell Pepper, Cabbage, and Wholegrain Rice | Dinner",
+    "Tofu Stir-fry with Capsicum, Cabbage, and Wholegrain Rice | Dinner",
     "Dry-fried Green Beans with Chicken, Rice, and Pickled Mustard Greens | Dinner",
     "Chilli-Garlic Fish with Brown Rice and Stir-fried Bean Sprouts | Dinner",
     "Stir-fried Vermicelli with Egg, Spinach, and Carrot | Dinner",
@@ -1084,7 +1167,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Thai Sweet Sticky Brown Rice with Mango and Mint (rare treat) | Breakfast",
 
     "Pad Krapow Moo Sap (Thai Basil Minced Pork with Brown Rice and Stir-fried Vegetables) | Lunch",
-    "Tom Yum Gai (Spicy Chicken Soup with Brown Rice and Steamed Greens) | Lunch",
+    "Tom Yum Gai (Chicken Soup with Brown Rice and Steamed Greens) | Lunch",
     "Khao Man Gai (Thai Poached Chicken with Brown Rice and Clear Broth) | Lunch",
     "Thai Grilled Chicken with Som Tum and Brown Rice | Lunch",
     "Pad Pak Ruam with Tofu and Jasmine Brown Rice | Lunch",
@@ -1132,7 +1215,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Thai Tofu Curry Noodles with Spinach and Carrot | Lunch",
     "Stir-fried Thai Kale with Prawn and Brown Rice | Lunch",
     "Thai Chicken Lettuce Cups with Sticky Brown Rice and Cucumber | Lunch",
-    "Spicy Thai Vegetable Stir-fry with Brown Rice and Sesame Tofu | Lunch",
+    "Thai Vegetable Stir-fry with Brown Rice and Sesame Tofu | Lunch",
 
     "Thai Green Curry with Chicken, Eggplant, and Brown Rice | Dinner",
     "Pad Krapow Gai (Thai Basil Chicken) with Brown Rice and Stir-fried Greens | Dinner",
@@ -1153,7 +1236,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Pad Prik King with Tofu, Green Beans, and Steamed Brown Rice | Dinner",
     "Tom Kha Soup with Chicken, Mushroom, and Brown Rice | Dinner",
     "Stir-fried Thai Kale with Garlic and Chicken over Brown Rice | Dinner",
-    "Thai Tofu Stir-fry with Eggplant, Bell Peppers, and Brown Rice | Dinner",
+    "Thai Tofu Stir-fry with Eggplant, Capsicum, and Brown Rice | Dinner",
     "Thai Grilled Tofu Skewers with Sticky Brown Rice and Steamed Vegetables | Dinner",
     "Nam Prik Ong (Minced Tomato-Pork Dip) with Brown Rice and Boiled Vegetables | Dinner",
     "Thai Basil Tofu Stir-fry with Brown Rice and Thai Slaw | Dinner",
@@ -1170,7 +1253,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Stir-fried Long Beans with Prawn and Brown Rice | Dinner",
     "Thai Chicken and Basil Stir-fry with Brown Rice and Steamed Greens | Dinner",
     "Tofu Green Curry with Brown Rice and Crunchy Slaw | Dinner",
-    "Spicy Thai Eggplant and Tofu Stir-fry with Brown Rice | Dinner",
+    "Thai Eggplant and Tofu Stir-fry with Brown Rice | Dinner",
     "Steamed Thai Fish with Ginger, Lime, and Brown Rice | Dinner",
     "Thai Vegetable Soup with Brown Rice and Tofu | Dinner",
     "Stir-fried Broccoli with Oyster Sauce and Chicken over Brown Rice | Dinner",
@@ -1238,7 +1321,7 @@ AUTHENTIC_RECIPE_NAMES = {
 
     "Grilled Chicken Souvlaki with Quinoa Tabbouleh and Hummus | Lunch",
     "Baked Eggplant with Lentils, Brown Rice, and Tahini Sauce | Lunch",
-    "Stuffed Bell Peppers with Couscous, Chickpeas, and Herbs | Lunch",
+    "Stuffed Capsicum with Couscous, Chickpeas, and Herbs | Lunch",
     "Falafel Bowl with Brown Rice, Roasted Vegetables, and Tahini | Lunch",
     "Mediterranean Tuna Salad with Wholegrain Crackers and Spinach | Lunch",
     "Grilled Halloumi with Farro Salad, Cherry Tomatoes, and Basil | Lunch",
@@ -1312,7 +1395,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Baked White Fish with Quinoa, Tomato Salsa, and Baby Spinach | Dinner",
     "Warm Lentil Salad with Roasted Pumpkin and Tahini Dressing | Dinner",
     "Grilled Chicken and Barley Pilaf with Spinach and Tzatziki | Dinner",
-    "Quinoa Stuffed Bell Peppers with Tomato Sauce and Rocket | Dinner",
+    "Quinoa Stuffed Capsicum with Tomato-Based Sauce and Rocket | Dinner",
     "Roasted Sweet Potato and Chickpea Salad with Bulgur and Yogurt | Dinner",
     "Wholemeal Pasta Bake with Grilled Vegetables and Ricotta | Dinner",
     "Grilled Fish with Brown Rice, Zucchini, and Tomato Basil Sauce | Dinner",
@@ -1335,7 +1418,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Mediterranean Spiced Chicken with Wild Rice and Mixed Salad | Dinner",
     "Chickpea and Barley Skillet with Capsicum and Yogurt Drizzle | Dinner",
     "Grilled Fish with Tomato Chickpea Ragu and Steamed Zucchini | Dinner",
-    "Lentil Shepherd’s Pie with Olive Oil Mashed Sweet Potato | Dinner",
+    "Lentil Shepherd's Pie with Olive Oil Mashed Sweet Potato | Dinner",
     "Spinach and Chickpea Curry with Brown Rice and Lemon Yogurt | Dinner"
 ],
     "Korean": [
@@ -1369,7 +1452,6 @@ AUTHENTIC_RECIPE_NAMES = {
     "Doenjang Zucchini Stir-fry with Egg and Wholegrain Rice | Breakfast",
     "Braised Burdock Root with Spinach Rice and Fried Tofu | Breakfast",
     "Broccoli Stir-fry with Brown Rice and Kimchi Omelette | Breakfast",
-    "Spicy Radish Soup with Spinach and Poached Egg | Breakfast",
     "Tofu Patty with Multigrain Rice and Pickled Cucumber | Breakfast",
     "Zucchini Pancakes (Hobak Jeon) with Soft Boiled Egg | Breakfast",
     "Steamed Eggplant with Brown Rice and Perilla Oil Drizzle | Breakfast",
@@ -1378,7 +1460,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Spinach Gyeran Mari with Wholegrain Toast and Kimchi | Breakfast",
     "Vegetable Kimchi Stew with Rice and Boiled Egg | Breakfast",
     "Soybean Paste Soup with Enoki and Cabbage Rice | Breakfast",
-    "Sauteed Bell Peppers with Egg Scramble and Toasted Barley | Breakfast",
+    "Sauteed Capsicum with Egg Scramble and Toasted Barley | Breakfast",
     "Grilled Zucchini with Brown Rice and Kimchi Salad | Breakfast",
     "Rice with Braised Radish and Soft Tofu Cubes | Breakfast",
     "Lotus Seed Congee with Sesame Seeds and Pear Slices | Breakfast",
@@ -1396,7 +1478,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Grilled Mackerel with Steamed Brown Rice and Stir-fried Zucchini and Spinach | Lunch",
     "Korean Barley Rice with Chicken, Sautéed Mushrooms, and Cabbage Kimchi | Lunch",
     "Sundubu Jjigae (Soft Tofu Stew) with Brown Rice and Steamed Broccoli and Carrot | Lunch",
-    "Jeyuk Bokkeum (Spicy Pork Stir-fry) with Brown Rice and Steamed Bok Choy and Beansprouts | Lunch",
+    "Jeyuk Bokkeum (Pork Stir-fry) with Brown Rice and Steamed Bok Choy and Beansprouts | Lunch",
     "Korean Chicken Bulgogi with Quinoa and Grilled Capsicum and Zucchini | Lunch",
     "Kongguksu (Cold Soybean Noodle Soup) with Soba Noodles and Cucumber and Egg | Lunch",
     "Vegetarian Bibimbap with Barley, Stir-fried Greens, Carrot, and Gochujang | Lunch",
@@ -1404,7 +1486,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Korean Seafood Stew (Haemul Tang) with Brown Rice and Steamed Pumpkin and Snow Peas | Lunch",
     "Tofu Jorim (Braised Tofu) with Barley Rice and Stir-fried Kale and Bean Sprouts | Lunch",
     "Chicken Doenjang Stir-fry with Quinoa and Grilled Onion and Carrot | Lunch",
-    "Kimchi Bibim Guksu (Spicy Cold Buckwheat Noodles) with Boiled Egg and Cucumber | Lunch",
+    "Kimchi Bibim Guksu (Cold Buckwheat Noodles) with Boiled Egg and Cucumber | Lunch",
     "Soy Sauce Braised Chicken with Brown Rice, Steamed Cauliflower, and Spinach | Lunch",
     "Beef Bulgogi with Wholegrain Rice and Steamed Green Beans and Zucchini | Lunch",
     "Vegetarian Kimchi Jjigae with Brown Rice, Mushrooms, and Bok Choy | Lunch",
@@ -1412,11 +1494,11 @@ AUTHENTIC_RECIPE_NAMES = {
     "Gyeran Mari (Rolled Omelette) with Brown Rice, Steamed Pumpkin, and Radish | Lunch",
     "Korean-Style Lentil Bowl with Brown Rice, Sautéed Spinach, and Pickled Cucumber | Lunch",
     "Stir-fried Anchovies and Tofu with Barley, Spinach, and Cabbage | Lunch",
-    "Dakdoritang (Spicy Braised Chicken) with Brown Rice and Steamed Broccoli and Sweet Potato | Lunch",
+    "Dakdoritang (Braised Chicken) with Brown Rice and Steamed Broccoli and Sweet Potato | Lunch",
     "Kimchi Fried Brown Rice with Egg, Stir-fried Kale, and Carrot | Lunch",
     "Gochujang Grilled Eggplant with Barley, Tofu Cubes, and Bean Sprouts | Lunch",
     "Korean Mixed Grain Rice (Japgokbap) with Grilled Mackerel and Steamed Greens | Lunch",
-    "Spicy Braised Potatoes (Gamja Jorim) with Brown Rice and Cucumber Salad | Lunch",
+    "Braised Potatoes (Gamja Jorim) with Brown Rice and Cucumber Salad | Lunch",
     "Kimchi Tofu Stir-fry with Black Rice, Bok Choy, and Grated Daikon | Lunch",
     "Korean Spinach Soup (Sigeumchi Guk) with Brown Rice and Braised Chicken Thigh | Lunch",
     "Doenjang Glazed Eggplant with Millet, Tofu, and Pickled Cabbage | Lunch",
@@ -1433,7 +1515,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Soybean Sprout Soup (Kongnamul Guk) with Brown Rice and Braised Mushrooms | Lunch",
     "Steamed Fish with Doenjang Sauce, Quinoa, and Grilled Pumpkin and Onion | Lunch",
     "Vegetarian Bulgogi Tofu Bowl with Brown Rice, Steamed Spinach, and Cucumber | Lunch",
-    "Spicy Chicken Thigh Strips with Brown Rice and Grilled Cabbage and Carrot | Lunch",
+    "Chicken Thigh Strips with Brown Rice and Grilled Cabbage and Carrot | Lunch",
     "Tofu and Vegetable Hotpot with Wholegrain Noodles and Kimchi | Lunch",
     "Cold Buckwheat Noodles (Naengmyeon) with Cucumber, Egg, and Radish | Lunch",
     "Soy Sauce Chicken Bowl with Black Rice, Roasted Zucchini, and Bok Choy | Lunch",
@@ -1449,12 +1531,12 @@ AUTHENTIC_RECIPE_NAMES = {
     "Kongbiji Jjigae (Soy Pulp Stew) with Brown Rice, Sauteed Kale, and Carrot | Dinner",
     "Samgyetang (Ginseng Chicken Soup) with Brown Rice and Steamed Broccoli and Sweet Potato | Dinner",
     "Vegetarian Bibimbap with Black Rice, Spinach, Cucumber, and Fried Egg | Dinner",
-    "Spicy Stir-fried Squid (Ojingeo Bokkeum) with Brown Rice and Stir-fried Bean Sprouts and Capsicum | Dinner",
+    "Stir-fried Squid (Ojingeo Bokkeum) with Brown Rice and Stir-fried Bean Sprouts and Capsicum | Dinner",
     "Galbijjim (Braised Short Ribs) with Millet and Steamed Mushrooms and Daikon | Dinner",
     "Tofu Steak with Brown Rice, Stir-fried Choy Sum, and Pickled Radish | Dinner",
     "Grilled Mackerel Pike with Barley and Steamed Carrot and Bok Choy | Dinner",
     "Korean Chicken Bulgogi with Brown Rice, Sauteed Cabbage, and Pumpkin | Dinner",
-    "Spicy Tofu Stir-fry with Quinoa, Stir-fried Spinach, and Bean Sprouts | Dinner",
+    "Tofu Stir-fry with Quinoa, Stir-fried Spinach, and Bean Sprouts | Dinner",
     "Soy Braised Lotus Root with Brown Rice and Steamed Greens and Carrot | Dinner",
     "Mul Naengmyeon (Cold Buckwheat Noodles) with Egg, Cucumber, and Kimchi | Dinner",
     "Gochujang Glazed Eggplant with Brown Rice, Stir-fried Mushroom, and Kale | Dinner",
@@ -1468,7 +1550,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Soy Glazed Mushrooms with Quinoa, Stir-fried Cabbage, and Daikon | Dinner",
     "Braised Soybean Sprouts with Brown Rice and Stir-fried Eggplant and Kale | Dinner",
     "Korean Black Bean Rice with Stir-fried Spinach and Sauteed Carrot | Dinner",
-    "Jeyuk Bokkeum (Spicy Pork) with Brown Rice and Steamed Greens and Zucchini | Dinner",
+    "Jeyuk Bokkeum (Pork) with Brown Rice and Steamed Greens and Zucchini | Dinner",
     "Kimchi Fried Brown Rice with Tofu, Carrot, and Kale | Dinner",
     "Doenjang Braised Tofu with Barley, Stir-fried Onion, and Pak Choi | Dinner",
     "Pan-fried Sardines with Brown Rice and Steamed Broccoli and Daikon | Dinner",
@@ -1481,14 +1563,14 @@ AUTHENTIC_RECIPE_NAMES = {
     "Kimchi Noodle Stir-fry with Tofu and Bok Choy and Zucchini | Dinner",
     "Gochujang Grilled Mackerel with Brown Rice, Steamed Spinach, and Daikon | Dinner",
     "Pan-seared Tofu with Millet, Braised Lotus Root, and Stir-fried Kale | Dinner",
-    "Spicy Chicken Stir-fry with Barley, Cabbage Kimchi, and Roasted Zucchini | Dinner",
+    "Chicken Stir-fry with Barley, Cabbage Kimchi, and Roasted Zucchini | Dinner",
     "Soy-glazed Eggplant and Tofu with Brown Rice and Sauteed Carrot and Greens | Dinner",
     "Vegetarian Korean Hotpot with Brown Rice, Tofu, Napa Cabbage, and Pumpkin | Dinner",
     "Cold Soba Noodles with Cucumber, Boiled Egg, and Radish Kimchi | Dinner",
     "Grilled Fish with Quinoa, Stir-fried Mushrooms, and Bean Sprouts | Dinner",
     "Korean Chickpea Bowl with Brown Rice, Stir-fried Kale, and Kimchi | Dinner",
     "Braised Mackerel with Onion, Carrot, and Brown Rice | Dinner",
-    "Dak Galbi (Spicy Chicken and Cabbage Stir-fry) with Barley and Steamed Pumpkin | Dinner",
+    "Dak Galbi (Chicken and Cabbage Stir-fry) with Barley and Steamed Pumpkin | Dinner",
     "Gochujang Lentil Bowl with Brown Rice, Spinach, and Cabbage | Dinner",
     "Vegetarian Kimbap with Brown Rice, Egg, Carrot, and Cucumber | Dinner"
 ],
@@ -1563,7 +1645,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Bún Măng Vịt (Duck and Bamboo Noodle Soup) with Herbs | Lunch",
     "Chả Lụa (Vietnamese Ham) with Brown Rice and Vegetable Stir-fry | Lunch",
     "Canh Bí Đao with Tofu, Brown Rice, and Fresh Herbs | Lunch",
-    "Đậu Hũ Sốt Cà Chua (Tofu in Tomato Sauce) with Brown Rice and Greens | Lunch",
+    "Đậu Hũ Sốt Cà Chua (Tofu in Tomato-Based Sauce) with Brown Rice and Greens | Lunch",
     "Bánh Xèo with Mung Beans, Prawns, and Lettuce Wrap | Lunch",
     "Gỏi Gà with Shredded Chicken, Cabbage, and Rice Paper Crackers | Lunch",
     "Cơm Gà Hội An (Hoi An Chicken Rice) with Steamed Vegetables | Lunch",
@@ -1597,7 +1679,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Cá Kho Tộ (Braised Fish in Clay Pot) with Brown Rice and Sautéed Greens | Dinner",
     "Thịt Kho Trứng (Pork and Egg Braise) with Brown Rice and Steamed Bok Choy | Dinner",
     "Canh Chua Cá (Sweet and Sour Fish Soup) with Brown Rice and Fresh Herbs | Dinner",
-    "Đậu Hũ Sốt Cà Chua (Tofu in Tomato Sauce) with Brown Rice and Stir-fried Spinach | Dinner",
+    "Đậu Hũ Sốt Cà Chua (Tofu in Tomato-Based Sauce) with Brown Rice and Stir-fried Spinach | Dinner",
     "Gà Kho Gừng (Ginger Chicken Braise) with Brown Rice and Pickled Vegetables | Dinner",
     "Bò Kho (Vietnamese Beef Stew) with Whole Wheat Baguette and Steamed Greens | Dinner",
     "Cá Hấp Gừng (Steamed Fish with Ginger) with Brown Rice and Stir-fried Cabbage | Dinner",
@@ -1627,7 +1709,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Gỏi Gà (Chicken and Cabbage Salad) with Brown Rice Side | Dinner",
     "Thịt Heo Luộc (Boiled Pork Slices) with Dipping Sauce and Steamed Vegetables | Dinner",
     "Bánh Canh Tôm (Thick Noodle Soup with Prawns and Greens) | Dinner",
-    "Thịt Viên Sốt Cà (Meatballs in Tomato Sauce) with Brown Rice and Steamed Greens | Dinner",
+    "Thịt Viên Sốt Cà (Meatballs in Tomato-Based Sauce) with Brown Rice and Steamed Greens | Dinner",
     "Cháo Thịt Bằm (Minced Pork Congee) with Ginger and Carrot | Dinner",
     "Bún Mộc (Meatball and Mushroom Noodle Soup) with Fresh Herbs | Dinner",
     "Canh Rau Ngót (Vietnamese Sweet Leaf Soup) with Chicken and Brown Rice | Dinner",
@@ -1646,7 +1728,7 @@ AUTHENTIC_RECIPE_NAMES = {
 ],
     "Middle Eastern": [
     "Ful Medames with Wholemeal Pita, Tomato-Cucumber Salad, and Olive Oil | Breakfast",
-    "Labneh with Za’atar, Wholegrain Flatbread, and Fresh Vegetable Plate | Breakfast",
+    "Labneh with Za'atar, Wholegrain Flatbread, and Fresh Vegetable Plate | Breakfast",
     "Scrambled Eggs with Tomato (Shakshuka-style) and Wholegrain Pita | Breakfast",
     "Hummus with Steamed Chickpeas, Wholegrain Crackers, and Cucumber-Tomato Slices | Breakfast",
     "Fava Bean Patties with Wholegrain Wrap and Pickled Turnips | Breakfast",
@@ -1698,7 +1780,7 @@ AUTHENTIC_RECIPE_NAMES = {
 
     "Grilled Chicken Shawarma Bowl with Brown Rice, Cucumber, and Hummus | Lunch",
     "Falafel Wrap with Tahini Sauce, Tomato-Cucumber Salad, and Wholegrain Pita | Lunch",
-    "Stuffed Bell Peppers with Spiced Lentils, Brown Rice, and Tomato Sauce | Lunch",
+    "Stuffed Capsicum with Spiced Lentils, Brown Rice, and Tomato-Based Sauce | Lunch",
     "Baked Kofta with Chickpeas, Zucchini, and Wholemeal Couscous | Lunch",
     "Lentil Mujaddara with Caramelized Onion, Spinach, and Tomato Salad | Lunch",
     "Roasted Vegetable Tagine with Chickpeas, Brown Rice, and Coriander | Lunch",
@@ -1717,10 +1799,10 @@ AUTHENTIC_RECIPE_NAMES = {
     "Lamb and Chickpea Stew with Spinach and Brown Rice | Lunch",
     "Fava Bean and Tomato Bake with Wholegrain Bread and Parsley Salad | Lunch",
     "Grilled Tofu Shawarma with Wholegrain Wrap and Pickled Vegetables | Lunch",
-    "Cabbage Rolls with Brown Rice, Spiced Lentils, and Tomato Sauce | Lunch",
+    "Cabbage Rolls with Brown Rice, Spiced Lentils, and Tomato-Based Sauce | Lunch",
     "Mujaddara Bowl with Roasted Carrot, Spinach, and Lemon Tahini Sauce | Lunch",
     "Zaatar Chicken Thighs with Freekeh Pilaf and Grilled Capsicum | Lunch",
-    "Stuffed Eggplant with Chickpeas, Tomato Sauce, and Wholemeal Couscous | Lunch",
+    "Stuffed Eggplant with Chickpeas, Tomato-Based Sauce, and Wholemeal Couscous | Lunch",
     "Lentil and Spinach Fritters with Herb Yogurt Sauce and Quinoa | Lunch",
     "Wholegrain Flatbread Pizza with Chickpeas, Tomato, and Zaatar | Lunch",
     "Grilled Halloumi Bowl with Lentils, Rocket, and Quinoa | Lunch",
@@ -1728,12 +1810,12 @@ AUTHENTIC_RECIPE_NAMES = {
     "Roasted Vegetable and Tofu Bake with Couscous and Tahini Drizzle | Lunch",
     "Herb-Crusted Chicken Skewers with Freekeh and Mint Yogurt Sauce | Lunch",
     "Sweet Potato and Spinach Stew with Chickpeas and Brown Rice | Lunch",
-    "Lentil-Stuffed Bell Peppers with Tomato Sauce and Couscous | Lunch",
+    "Lentil-Stuffed Capsicum with Tomato-Based Sauce and Couscous | Lunch",
     "Grilled Mushroom and Eggplant Wrap with Tahini and Tomato-Cucumber Salad | Lunch",
     "Vegetarian Tagine with Quinoa, Apricot, and Pumpkin | Lunch",
     "Bulgur and Parsley Salad with Grilled Chicken and Hummus | Lunch",
     "Spiced Chickpea and Cauliflower Bowl with Wholegrain Pita | Lunch",
-    "Stuffed Cabbage Rolls with Lentils, Tomato Sauce, and Brown Rice | Lunch",
+    "Stuffed Cabbage Rolls with Lentils, Tomato-Based Sauce, and Brown Rice | Lunch",
     "Freekeh and Chickpea Salad with Roasted Carrot and Lemon Dressing | Lunch",
     "Tofu and Spinach Stuffed Flatbread with Tomato-Onion Salad | Lunch",
     "Wholemeal Borek with Pumpkin, Feta, and Herb Salad | Lunch",
@@ -1749,7 +1831,7 @@ AUTHENTIC_RECIPE_NAMES = {
 
     "Grilled Chicken Kebabs with Bulgur, Roasted Vegetables, and Mint Yogurt | Dinner",
     "Baked Falafel Plate with Brown Rice, Tabbouleh, and Tahini Sauce | Dinner",
-    "Stuffed Bell Peppers with Spiced Lentils, Brown Rice, and Tomato Sauce | Dinner",
+    "Stuffed Capsicum with Spiced Lentils, Brown Rice, and Tomato-Based Sauce | Dinner",
     "Lamb Kofta with Quinoa, Grilled Eggplant, and Garlic Yogurt | Dinner",
     "Vegetarian Tagine with Chickpeas, Pumpkin, Couscous, and Coriander | Dinner",
     "Freekeh Pilaf with Grilled Chicken, Roasted Carrots, and Spinach | Dinner",
@@ -1758,7 +1840,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Grilled Halloumi with Lentil Salad, Roasted Capsicum, and Wholegrain Pita | Dinner",
     "Red Lentil and Spinach Soup with Wholegrain Crackers and Rocket Salad | Dinner",
     "Roast Chicken Thighs with Freekeh, Carrot, and Tomato-Cucumber Salad | Dinner",
-    "Stuffed Eggplant with Chickpeas, Tomato Sauce, and Quinoa | Dinner",
+    "Stuffed Eggplant with Chickpeas, Tomato-Based Sauce, and Quinoa | Dinner",
     "Falafel Wrap with Grilled Vegetables, Tahini, and Wholemeal Flatbread | Dinner",
     "Baked Tofu Kofta with Bulgur Pilaf, Grilled Zucchini, and Garlic Sauce | Dinner",
     "Vegetarian Mujaddara with Cabbage Slaw and Yogurt Sauce | Dinner",
@@ -1777,9 +1859,9 @@ AUTHENTIC_RECIPE_NAMES = {
     "Lamb and Lentil Stew with Steamed Greens and Wholegrain Flatbread | Dinner",
     "Chickpea and Spinach Fritters with Freekeh and Cucumber-Tomato Salad | Dinner",
     "Grilled Chicken Thigh Skewers with Quinoa Tabbouleh and Garlic Sauce | Dinner",
-    "Wholegrain Flatbread Pizza with Chickpeas, Tomato, and Za’atar | Dinner",
+    "Wholegrain Flatbread Pizza with Chickpeas, Tomato, and Za'atar | Dinner",
     "Tofu Shawarma Bowl with Brown Rice, Roasted Vegetables, and Tahini | Dinner",
-    "Stuffed Capsicum with Spiced Lentils, Tomato Sauce, and Couscous | Dinner",
+    "Stuffed Capsicum with Spiced Lentils, Tomato-Based Sauce, and Couscous | Dinner",
     "Fava Bean Stew with Grilled Eggplant and Wholegrain Bread | Dinner",
     "Baked Vegetable Kibbeh with Spinach Salad and Yogurt Sauce | Dinner",
     "Lentil and Pumpkin Stew with Brown Rice and Fresh Coriander | Dinner",
@@ -1790,7 +1872,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Wholemeal Flatbread with Zaatar Tofu, Tomato, and Rocket | Dinner",
     "Stuffed Eggplant Boats with Lentils, Spinach, and Tahini Drizzle | Dinner",
     "Grilled Chicken with Freekeh, Roasted Pumpkin, and Lemon Yogurt Sauce | Dinner",
-    "Cabbage Rolls with Spiced Chickpeas, Rice, and Tomato Sauce | Dinner",
+    "Cabbage Rolls with Spiced Chickpeas, Rice, and Tomato-Based Sauce | Dinner",
     "Lentil and Vegetable Stew with Wholegrain Toast and Pickled Radish | Dinner",
     "Falafel and Hummus Platter with Tabouleh and Wholegrain Bread | Dinner",
     "Tofu and Eggplant Skewers with Couscous and Mint Chutney | Dinner",
@@ -1840,12 +1922,11 @@ AUTHENTIC_RECIPE_NAMES = {
     "Tanzanian Kidney Bean Curry with Whole Wheat Roti and Spinach | Breakfast",
     "Spiced Tofu and Okra Stir-Fry with Fonio and Tomato Salad | Breakfast",
     "Rwanda-Style Sweet Potato and Peanut Stew with Greens and Rice | Breakfast",
-    "Tofu and Bell Pepper Skillet with Boiled Cassava and Spicy Sauce | Breakfast",
     "Beninese Akassa with Black-eyed Peas and Cucumber-Onion Relish | Breakfast",
     "Cassava Hash with Fried Egg, Avocado, and Fresh Tomato Relish | Breakfast",
     "Egyptian Lentil and Chickpea Bowl with Pita and Garden Salad | Breakfast",
     "Boiled Ground Proso Millet with Milk, Honey, and Flaxseeds | Breakfast",
-    "Black-eyed Pea Patties with Kale and Spicy Tomato Sauce | Breakfast",
+    "Black-eyed Pea Patties with Kale and Tomato-Based Sauce | Breakfast",
     "Ethiopian Shiro Wat with Brown Rice and Spinach | Breakfast",
     "Green Banana Mash with Boiled Egg and Tomato Relish | Breakfast",
     "Chickpea and Avocado Toast with Carrot Salad and Lemon | Breakfast",
@@ -1873,7 +1954,6 @@ AUTHENTIC_RECIPE_NAMES = {
     "Senegalese Black-Eyed Pea Stew with Wholegrain Rice and Grilled Eggplant | Lunch",
     "Grilled Sardines with Fonio, Tomato Relish, and Sautéed Pumpkin Greens | Lunch",
     "Lamb Tagine with Couscous, Zucchini, and Dried Apricots | Lunch",
-    "Spicy Chickpea and Sweet Potato Stew with Brown Rice | Lunch",
     "North African Spiced Chicken with Bulgur, Green Beans, and Carrots | Lunch",
     "Baked Okra and Tomato Casserole with Millet and Lentil Patties | Lunch",
     "Zanzibar Chicken Curry with Brown Rice and Sautéed Collards | Lunch",
@@ -1887,7 +1967,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Vegetarian Egusi Stew with Fonio and Stir-Fried Garden Greens | Lunch",
     "Chickpea-Tomato Curry with Injera and Grilled Okra | Lunch",
     "Lentil-Spinach Curry with Millet and Fried Plantain Chips | Lunch",
-    "Grilled Lamb Kebabs with Brown Rice, Bell Peppers, and Red Onion | Lunch",
+    "Grilled Lamb Kebabs with Brown Rice, Capsicum, and Red Onion | Lunch",
     "Vegetarian Ugandan Groundnut Stew with Sorghum and Greens | Lunch",
     "Moroccan Quinoa Bowl with Harissa Chickpeas and Roasted Veggies | Lunch",
     "Malawian Chambo Fish with Sweet Potato Mash and Mustard Greens | Lunch",
@@ -1919,7 +1999,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Mozambican Prawn Stew with Brown Rice and Grilled Eggplant | Dinner",
     "Roasted Pumpkin and Chickpea Tagine with Couscous and Okra | Dinner",
     "Sudanese Ful Medames with Wholegrain Flatbread and Pickled Vegetables | Dinner",
-    "Cape Malay Chicken Curry with Brown Rice and Grilled Bell Peppers | Dinner",
+    "Cape Malay Chicken Curry with Brown Rice and Grilled Capsicum | Dinner",
     "Nigerian Egusi Soup with Brown Rice and Sautéed Spinach | Dinner",
     "Tunisian Vegetable Couscous with Grilled Sardines and Tomato Salad | Dinner",
     "Chadian Bean Stew with Brown Rice and Boiled Okra | Dinner",
@@ -2023,7 +2103,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Chickpea and Spinach Stew with Barley Flatbread and Dill Oil | Lunch",
     "Wholegrain Rye Wraps with Grilled Vegetables and Cottage Cheese | Lunch",
     "Nordic Lentil Soup with Turnip, Carrot, and Fresh Thyme | Lunch",
-    "Stuffed Bell Peppers with Barley, Mushrooms, and Herbs | Lunch",
+    "Stuffed Capsicum with Barley, Mushrooms, and Herbs | Lunch",
     "Grilled Herring with Mashed Peas, Rye Toast, and Mustard Sauce | Lunch",
     "Rutabaga and Carrot Gratin with Smoked Salmon and Kale Salad | Lunch",
     "Oven-baked Chicken with Quinoa, Steamed Beans, and Lingonberry Dressing | Lunch",
@@ -2060,7 +2140,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Nordic Chickpea Patties with Mashed Turnip, Green Beans, and Lingonberry Sauce | Dinner",
     "Wholegrain Pasta with Mushroom Cream, Spinach, and Grilled Chicken | Dinner",
     "Grilled Cod with Cabbage-Carrot Slaw and Barley Pilaf | Dinner",
-    "Spelt-Stuffed Bell Peppers with Tomato Sauce and Dill Yogurt | Dinner",
+    "Spelt-Stuffed Capsicum with Tomato-Based Sauce and Dill Yogurt | Dinner",
     "Lentil Stew with Carrots, Kale, and Wholegrain Flatbread | Dinner",
     "Rutabaga Mash with Herb Baked Tofu and Roasted Beetroot | Dinner",
     "Poached Pollock with Potato-Leek Purée and Steamed Spinach | Dinner",
@@ -2100,7 +2180,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Roast Duck Breast with Spelt, Red Cabbage, and Apple | Dinner",
     "Nordic Veggie Skewers with Couscous and Yogurt Herb Drizzle | Dinner",
     "Grilled Tempeh with Roasted Pumpkin and Pickled Carrot | Dinner",
-    "Vegetarian Cabbage Rolls with Buckwheat and Tomato Sauce | Dinner",
+    "Vegetarian Cabbage Rolls with Buckwheat and Tomato-Based Sauce | Dinner",
     "Smoked Fish Cakes with Mashed Potato, Beans, and Yogurt Dill Dip | Dinner",
     "Nordic Veggie Stir-Fry with Rye Noodles and Soft Egg | Dinner"
 ],
@@ -2115,7 +2195,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Syrniki (Cottage Cheese Pancakes) with Apple Compote and Walnuts | Breakfast",
     "Rye Bread Sandwich with Boiled Egg, Mustard, and Pickled Cucumber | Breakfast",
     "Oatmeal with Poppy Seeds, Banana, and Sunflower Seeds | Breakfast",
-    "Vegetable Omelette with Tomato, Onion, Bell Pepper, and Rye Toast | Breakfast",
+    "Vegetable Omelette with Tomato, Onion, Capsicum, and Rye Toast | Breakfast",
     "Cottage Cheese Bowl with Pumpkin Seeds, Berries, and Wholegrain Cracker | Breakfast",
     "Savory Millet Pancakes with Zucchini, Dill, and Yogurt Dip | Breakfast",
     "Mashed Green Pea and Egg Spread on Rye Bread with Tomato Slices | Breakfast",
@@ -2127,7 +2207,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Cottage Cheese and Herb Dip with Rye Crackers, Radish, and Cucumber | Breakfast",
     "Hard-Boiled Eggs with Tomato-Cucumber-Dill Salad and Wholegrain Bread | Breakfast",
     "Lentil Spread with Garlic and Paprika on Toast with Beetroot | Breakfast",
-    "Sautéed Bell Pepper and Onion with Egg Scramble and Rye Crispbread | Breakfast",
+    "Sautéed Capsicum and Onion with Egg Scramble and Rye Crispbread | Breakfast",
     "Spinach and Feta Egg Muffins with Rye Toast and Tomato Salsa | Breakfast",
     "Mashed Beans with Paprika, Onion, and Tomato on Wholegrain Bread | Breakfast",
     "Wholegrain Farro Bowl with Grated Apple, Walnuts, and Kefir | Breakfast",
@@ -2156,11 +2236,11 @@ AUTHENTIC_RECIPE_NAMES = {
     "Farro with Roasted Pumpkin, Yogurt, Walnuts, and Cinnamon | Breakfast",
 
     "Grilled Chicken Paprikash with Brown Rice and Steamed Green Beans | Lunch",
-    "Stuffed Bell Peppers with Ground Turkey, Brown Rice, and Tomato Sauce | Lunch",
+    "Stuffed Capsicum with Ground Turkey, Brown Rice, and Tomato-Based Sauce | Lunch",
     "Grilled Trout with Boiled Potatoes, Sauerkraut, and Dill Yogurt Sauce | Lunch",
     "Beef Goulash with Wholegrain Noodles and Roasted Root Vegetables | Lunch",
     "Lentil Stew with Carrots, Celery, and Wholegrain Rye Bread | Lunch",
-    "Baked Cabbage Rolls with Lean Minced Beef, Quinoa, and Tomato Sauce | Lunch",
+    "Baked Cabbage Rolls with Lean Minced Beef, Quinoa, and Tomato-Based Sauce | Lunch",
     "Vegetarian Buckwheat Kasha with Mushrooms, Onion, and Green Salad | Lunch",
     "Roast Chicken Thighs with Pearl Barley and Braised Red Cabbage | Lunch",
     "Vegetable Borscht with Wholemeal Bread and Boiled Egg | Lunch",
@@ -2210,7 +2290,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Baked Trout with Barley, Spinach, and Dill Yogurt Sauce | Dinner",
     "Vegetable Goulash with Brown Rice and Cucumber-Tomato Salad | Dinner",
     "Beef Stroganoff with Wholegrain Pasta and Steamed Broccoli | Dinner",
-    "Baked Cabbage Rolls with Lean Turkey, Quinoa, and Tomato Sauce | Dinner",
+    "Baked Cabbage Rolls with Lean Turkey, Quinoa, and Tomato-Based Sauce | Dinner",
     "Grilled Zander with Millet and Roasted Root Vegetables | Dinner",
     "Stuffed Peppers with Lentils, Brown Rice, and Herbed Yogurt | Dinner",
     "Chicken Paprikash with Steamed Potatoes and Green Peas | Dinner",
@@ -2235,7 +2315,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Braised Turkey with Pearl Barley and Roasted Parsnip-Carrot Mix | Dinner",
     "Hungarian Lecso with Grilled Chicken and Wholegrain Bread | Dinner",
     "Baked White Fish with Garlic Spinach, Brown Rice, and Lemon Dill Sauce | Dinner",
-    "Vegetarian Stuffed Cabbage Leaves with Tomato Sauce and Millet | Dinner",
+    "Vegetarian Stuffed Cabbage Leaves with Tomato-Based Sauce and Millet | Dinner",
     "Beef Stew with Root Veggies and Rye Flatbread | Dinner",
     "Chicken and Sauerkraut Skillet with Quinoa and Apple Slaw | Dinner",
     "Zucchini and Red Lentil Stew with Brown Bread and Fresh Parsley | Dinner",
@@ -2251,7 +2331,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Cabbage and Bean Casserole with Wholegrain Toast and Herb Yogurt | Dinner",
     "Lentil and Pumpkin Bake with Rye Crumbs and Carrot-Cucumber Salad | Dinner",
     "Baked Pike Patties with Millet, Zucchini Salad, and Lemon Yogurt | Dinner",
-    "Stuffed Peppers with Quinoa, Chickpeas, and Spiced Tomato Sauce | Dinner",
+    "Stuffed Peppers with Quinoa, Chickpeas, and Spiced Tomato-Based Sauce | Dinner",
     "Grilled Mackerel with Sweet Potato Wedges and Dill-Cucumber Salad | Dinner",
     "Vegetarian Mushroom Goulash with Brown Rice and Fresh Greens | Dinner",
     "Roast Chicken with Wild Rice and Steamed Green Beans | Dinner",
@@ -2263,7 +2343,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Callaloo Omelette with Roasted Breadfruit Wedges and Cucumber | Breakfast",
     "Green Fig and Saltfish with Avocado and Steamed Carrot Rounds | Breakfast",
     "Mackerel Rundown with Boiled Yam, Pumpkin, and Kale | Breakfast",
-    "Saltfish Buljol with Wholemeal Bake, Tomato, and Bell Pepper | Breakfast",
+    "Saltfish Buljol with Wholemeal Bake, Tomato, and Capsicum | Breakfast",
     "Cabbage and Carrot Stir-fry with Smoked Herring and Brown Rice | Breakfast",
     "Jamaican Steamed Fish with Pumpkin, Spinach, and Green Banana | Breakfast",
     "Vegetable Ackee with Wholemeal Festival and Sautéed Callaloo | Breakfast",
@@ -2286,11 +2366,11 @@ AUTHENTIC_RECIPE_NAMES = {
     "Vegetarian Saltfish-style Soy Chunks with Cassava and Carrot Slaw | Breakfast",
     "Sautéed Callaloo with Boiled Breadfruit, Egg, and Tomato Chutney | Breakfast",
     "Lentil Patties with Pumpkin Mash and Coconut Stewed Spinach | Breakfast",
-    "Fried Jackfruit with Green Banana and Sautéed Bell Pepper | Breakfast",
+    "Fried Jackfruit with Green Banana and Sautéed Capsicum | Breakfast",
     "Caribbean Herb Tofu with Pumpkin and Spinach over Boiled Cassava | Breakfast",
     "Coconut Milk Porridge with Wholegrain Oats, Nutmeg, and Guava Slices | Breakfast",
     "Wholemeal Johnny Cakes with Callaloo, Tomato, and Avocado | Breakfast",
-    "Spicy Vegetable Stir-fry with Wholegrain Breadfruit Cakes and Guava | Breakfast",
+    "Vegetable Stir-fry with Wholegrain Breadfruit Cakes and Guava | Breakfast",
     "Smoked Herring and Cabbage with Boiled Plantain and Carrot Ribbons | Breakfast",
     "Pumpkin and Red Pea Hash with Yam and Callaloo | Breakfast",
     "Sautéed Okra with Boiled Cassava, Fried Egg, and Cucumber | Breakfast",
@@ -2324,7 +2404,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Tofu Jerk Bowl with Brown Rice, Kale, and Carrot Slaw | Lunch",
     "Stewed Turkey Neck with Yam, Pumpkin, and Sautéed Callaloo | Lunch",
     "Ackee and Veggie Stew with Boiled Breadfruit and Sautéed Spinach | Lunch",
-    "Escovitch Fish with Bammy, Bell Peppers, and Carrot Slaw | Lunch",
+    "Escovitch Fish with Bammy, Capsicum, and Carrot Slaw | Lunch",
     "Caribbean Veggie Patties with Brown Rice, Pumpkin, and Steamed Okra | Lunch",
     "Cow Pea Stew with Plantain, Kale, and Coconut Rice | Lunch",
     "Saltfish Stew with Pumpkin, Green Banana, and Avocado | Lunch",
@@ -2366,7 +2446,7 @@ AUTHENTIC_RECIPE_NAMES = {
     "Caribbean Lentil Stew with Wholegrain Couscous, Carrot, and Spinach | Dinner",
     "Escovitch Fish with Baked Sweet Potato, Kale, and Pickled Vegetables | Dinner",
     "Vegetarian Callaloo Stew with Quinoa, Pumpkin, and Tomato | Dinner",
-    "Jerk Tofu with Brown Rice, Bell Pepper, and Cabbage Slaw | Dinner",
+    "Jerk Tofu with Brown Rice, Capsicum, and Cabbage Slaw | Dinner",
     "Grilled Chicken Thighs with Coconut Rice, Green Beans, and Sweet Corn | Dinner",
     "Fish Stew with Yam, Spinach, and Tomato | Dinner",
     "Red Bean and Pumpkin Curry with Brown Rice and Okra | Dinner",
@@ -2388,20 +2468,20 @@ AUTHENTIC_RECIPE_NAMES = {
     "Smoked Tofu Curry with Plantain, Tomato, and Kale | Dinner",
     "Callaloo and Black Bean Stir-fry with Rice and Grilled Zucchini | Dinner",
     "Coconut Fish Stew with Sweet Potato and Kale | Dinner",
-    "Tofu and Breadfruit Bake with Pumpkin and Tomato Sauce | Dinner",
+    "Tofu and Breadfruit Bake with Pumpkin and Tomato-Based Sauce | Dinner",
     "Baked Snapper with Wild Rice, Okra, and Tamarind Glaze | Dinner",
     "Salted Cod with Yam, Pumpkin, and Steamed Cabbage | Dinner",
     "Grilled Eggplant and Chickpea Stew with Brown Rice and Kale | Dinner",
-    "Red Bean Rundown with Quinoa, Okra, and Bell Peppers | Dinner",
+    "Red Bean Rundown with Quinoa, Okra, and Capsicum | Dinner",
     "Caribbean Curry Chicken with Wholemeal Roti, Spinach, and Carrot | Dinner",
     "Grilled Plantain with Lentil Stew, Kale, and Avocado Salsa | Dinner",
-    "Fish in Tomato Sauce with Cassava, Pumpkin, and Steamed Callaloo | Dinner",
+    "Fish in Tomato-Based Sauce with Cassava, Pumpkin, and Steamed Callaloo | Dinner",
     "Roasted Chicken Drumsticks with Wild Rice, Green Beans, and Tomato | Dinner",
     "Vegetable Curry with Coconut Milk, Boiled Plantain, and Cabbage | Dinner",
     "Grilled Prawn with Brown Rice, Mango Slaw, and Callaloo | Dinner",
     "Ackee and Tofu Stir-fry with Yam and Tomato | Dinner",
     "Cow Pea Stew with Pumpkin, Kale, and Boiled Green Banana | Dinner",
-    "Caribbean Eggplant Stew with Brown Rice, Carrot, and Bell Pepper | Dinner",
+    "Caribbean Eggplant Stew with Brown Rice, Carrot, and Capsicum | Dinner",
     "Saltfish Balls with Lentil Rice, Spinach, and Tomato Salsa | Dinner",
     "Grilled Chicken with Yam, Kale, and Scotch Bonnet Vinaigrette | Dinner",
     "Stewed Fish with Coconut Rice, Zucchini, and Tomato | Dinner",
@@ -2447,35 +2527,35 @@ def get_budget_constraints(budget_type):
 
 def get_time_constraints(time_constraint):
     constraints = {
-        "Busy schedule (15 mins)": {
+        "no more than 15 minutes": {
             "max_time": "15 minutes",
             "methods": ["stir-fry", "pan-fry", "boiling", "air-frying"],
             "avoid": ["baking", "roasting", "slow-cooking"],
             "prep": ["pre-cut", "canned", "frozen"],
             "steps": ["simple", "quick", "minimal"]
         },
-        "Moderate schedule (30 mins)": {
+        "between 15 and 30 minutes": {
             "max_time": "30 minutes",
             "methods": ["stir-fry", "pan-fry", "boiling", "baking", "air-frying"],
             "avoid": ["slow-cooking", "complex techniques"],
             "prep": ["fresh", "pre-cut", "canned"],
             "steps": ["moderate", "standard", "balanced"]
         },
-        "Busy on some days (45 mins)": {
+        "between 30 and 45 minutes": {
             "max_time": "45 minutes",
             "methods": ["all methods"],
             "avoid": ["slow-cooking"],
             "prep": ["fresh", "pre-cut", "canned"],
             "steps": ["detailed", "elaborate", "complex"]
         },
-        "Flexible Schedule (60 mins)": {
+        "between 45 and 60 minutes": {
             "max_time": "60 minutes",
             "methods": ["all methods"],
             "avoid": [],
             "prep": ["fresh", "pre-cut", "canned"],
             "steps": ["detailed", "elaborate", "complex"]
         },
-        "No Constraints (Any duration)": {
+        "no time limit": {
             "max_time": "No limit",
             "methods": ["all methods"],
             "avoid": [],
@@ -2502,7 +2582,7 @@ def filter_authentic_recipes(authentic_recipes, user_prefs, health_requirements)
     # Define restrictions based on diet type
     diet_restrictions = {
         "Vegetarian": ["meat", "fish", "poultry", "seafood"],
-        "Vegan": ["meat", "fish", "poultry", "seafood", "dairy", "eggs", "honey"],
+        "Vegan": ["meat", "fish", "poultry", "seafood", "dairy", "eggs", "honey", "egg", "omelette", "egg yolk", "egg white"],
         "Pescatarian": ["meat", "poultry"],
         "Gluten-Free": ["wheat", "barley", "rye", "flour"],
         "Dairy-Free": ["milk", "cheese", "butter", "cream", "yogurt"],
