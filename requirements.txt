@@ -1,8 +1,8 @@
 streamlit==1.33.0
-openai==1.23.6
+openai
+faiss-cpu
 pandas==2.2.2
-python-dotenv==1.0.1
 aiohttp==3.9.3
-faiss-cpu==1.7.4
 numpy==1.26.4
-scikit-learn==1.4.2
+scikit-learn
+nest_asyncio
